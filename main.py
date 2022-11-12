@@ -12,3 +12,17 @@ else:
     print("code success")
 finally:
     print("bye")
+
+
+def checker(var: str):
+    if type(var) == str:
+        return var
+    raise TypeError(f"Expected value of type 'str', got '{type(var).__name__}' instead")
+
+
+checker("")
+
+something = [1, 2, 3, 4, 5]
+iterator = iter(something)
+for elem in iterator:
+    print(elem)
