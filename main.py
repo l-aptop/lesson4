@@ -26,3 +26,10 @@ something = [1, 2, 3, 4, 5]
 iterator = iter(something)
 for elem in iterator:
     print(elem)
+
+
+def avg(*args):
+    return sum(args)/len(args)
+
+
+print(avg(1, 2, 3))
